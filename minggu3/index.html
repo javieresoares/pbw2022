@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia - HTML 5</title>
+</head>
+<body>
+    <h1>
+        Atlantis Seafret
+    </h1>
+    <video height="300px" width="350px" id="myVideo">
+        <source src="assets/atlantis.mp4" type="video/mp4">
+    </video>
+    <br>
+    <button onclick="playVid()" type="button">Play Video</button>
+	<button onclick="pauseVid()" type="button">Pause Video</button>
+</body>
+<script>
+    var vid = document.getElementById("myVideo");
+	function playVid() {
+    vid.play();
+	vid.loop = true;
+	}
+	function pauseVid() {
+    vid.pause();
+	}
+</script>
+</html>
